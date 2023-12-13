@@ -1,8 +1,3 @@
-<?php
-require_once '../controllers/preferencesController.php';
-require_once '../views/parts/header.php';
-?>
-
 
 <div class="container">
         <div class="sidebar-left">
@@ -15,8 +10,3 @@ require_once '../views/parts/header.php';
 
         </div>
     </div>
-
-
-<?php
-    require_once 'views/parts/footer.php';
-    ?>

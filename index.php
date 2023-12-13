@@ -1,4 +1,5 @@
 <?php
+$page ='Accueil';
 require_once 'controllers/indexController.php';
 require_once 'views/parts/header.php';
 ?>
