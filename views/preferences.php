@@ -4,7 +4,7 @@
 
         </div>
         <div class="sidebar-center">
-
+            <form action=""></form>
         </div>
         <div class="sidebar-right">
 
