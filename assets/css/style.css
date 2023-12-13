@@ -50,8 +50,11 @@ nav{
     background: #efefef;
     border-radius:6px;
     padding: 10px 30px;
-
 }
+.nav-right a i{
+    margin-right:10px;
+    font-size:20px;
+   }
 
 #logo{
     font-size: 45px;
@@ -190,7 +193,13 @@ form div button{
 
 @media screen and (max-width:600px){
 
-    #openBtn, #closeBtn{
+    #openBtn{
+        display:block;
+        font-size: 26px;
+        padding:20px 0 20px 0;
+    }
+
+    #closeBtn{
         display:block;
         font-size: 26px;
         padding:20px 0 20px 20px;
@@ -269,5 +278,27 @@ form div button{
     border-radius: 6px;
     background-color: #333;
    }
+
+   .nav-right{
+    display:flex;
+    align-items:center;
+   }
+
+   .nav-right a i{
+    font-size:20px;
+   }
+   .nav-right span{
+    display:none;
+   }
     
+   .nav-right a{
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    color:#efefef;
+    background: transparent;
+    border-radius:6px;
+    padding: 5px 10px;
+
+}
 }

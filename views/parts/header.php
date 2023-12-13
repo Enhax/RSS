@@ -28,7 +28,7 @@
             </ul>
         </div>
         <div class="nav-right">
-        <a href="http://rss/preferences">Préférences</a>
+            <a href="http://rss/preferences"><i class="fa-solid fa-gear"></i><span>Préférences</span></a>
             <i class="fa-solid fa-bars" id="openBtn"></i>
         </div>
         </div>
