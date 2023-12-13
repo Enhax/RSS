@@ -47,7 +47,7 @@ nav ul{
 }
 
 nav ul li{
-    padding: 25px 50px;
+    padding: 20px 40px;
     display:inline-block;
 }
 
@@ -160,10 +160,12 @@ nav ul li a{
     #openBtn, #closeBtn{
         display:block;
         font-size: 26px;
+        padding:20px 0 20px 20px;
     }
     
     h1{
         font-size: 22px;
+        padding-bottom:20px;
     }
     #logo{
         font-size: 24px;
@@ -189,17 +191,19 @@ nav ul li a{
     }
 
     .nav-center ul{
+        padding:20px;
         margin-top:20px;
-        width:fit-content;
     }
 
-    .nav-center ul li{
-        width:fit-content;
+    nav ul li{
+        display:block;
+        padding:unset;
+        margin-bottom:40px;
+        width: fit-content;
     }
 
     .nav-center ul li a{
-        font-size:16px;
-        width:fit-content;
+        font-size:18px;
     }
 
     .container{
@@ -227,7 +231,9 @@ nav ul li a{
         padding:20px;
     }
 
-    .sidebar-left p img, .sidebar-center p img, .sidebar-right p img{
-        height:200px;
-    }
+    .sidebar-left ul li img, .sidebar-center ul li img, .sidebar-right ul li img{
+    height:200px;
+    width:100%;
+   }
+    
 }
