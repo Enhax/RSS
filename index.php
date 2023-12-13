@@ -22,13 +22,15 @@ require_once 'views/parts/header.php';
             $desc = $item->description;
             $img = $item->enclosure['url'];
         ?>
-            <ul>
-                <li>
-                    <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
-                    <p><?php echo $desc ?></p>
-                    <p><?php echo $date ?></p>
-                </li>
-            </ul>
+            <div class="card">
+                <ul>
+                    <li>
+                        <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
+                        <p><?php echo $desc ?></p>
+                        <p><?php echo $date ?></p>
+                    </li>
+                </ul>
+            </div>
         <?php
         }
         ?>
@@ -47,14 +49,16 @@ require_once 'views/parts/header.php';
             $desc = $item->description;
             $img = $item->enclosure['url'];
         ?>
-            <ul>
-                <li>
-                    <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
-                    <img src="<?php echo $img ?>">
-                    <p><?php echo $desc ?></p>
-                    <p><?php echo $date ?></p>
-                </li>
-            </ul>
+            <div class="card">
+                <ul>
+                    <li>
+                        <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
+                        <img src="<?php echo $img ?>">
+                        <p><?php echo $desc ?></p>
+                        <p><?php echo $date ?></p>
+                    </li>
+                </ul>
+            </div>
         <?php
         }
         ?>
@@ -73,14 +77,16 @@ require_once 'views/parts/header.php';
             $desc = $item->description;
             $img = $item->enclosure['url'];
         ?>
-            <ul>
-                <li>
-                    <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
-                    <img src="<?php echo $img ?>">
-                    <p><?php echo $desc ?></p>
-                    <p><?php echo $date ?></p>
-                </li>
-            </ul>
+            <div class="card">
+                <ul>
+                    <li>
+                        <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
+                        <img src="<?php echo $img ?>">
+                        <p><?php echo $desc ?></p>
+                        <p><?php echo $date ?></p>
+                    </li>
+                </ul>
+            </div>
         <?php
         }
         ?>

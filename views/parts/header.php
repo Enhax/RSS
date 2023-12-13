@@ -25,10 +25,10 @@
                 <li><a href="#">Actualités</a></li>
                 <li><a href="#">Jeux vidéos</a></li>
                 <li><a href="#">Sports</a></li>
-                <li><a href="http://rss/preferences">Préférences</a></li>
             </ul>
         </div>
         <div class="nav-right">
+        <a href="http://rss/preferences">Préférences</a>
             <i class="fa-solid fa-bars" id="openBtn"></i>
         </div>
         </div>
