@@ -1,10 +1,10 @@
 <?php
-require_once 'controllers/indexController.php';
-require_once 'views/parts/header.php';
+require_once '../controllers/preferencesController.php';
+require_once '../views/parts/header.php';
 ?>
 
 
-    <div class="container">
+<div class="container">
         <div class="sidebar-left">
 
         </div>
@@ -16,7 +16,7 @@ require_once 'views/parts/header.php';
         </div>
     </div>
 
+
 <?php
     require_once 'views/parts/footer.php';
     ?>
-    
