@@ -22,6 +22,12 @@ h1{
     background-color: #0a0a0a;
     color: #efefef;
 }
+h2{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
 
 nav{
     display:flex;
@@ -215,19 +221,16 @@ nav ul li a{
     .sidebar-left{
         border-radius: unset;
         flex-basis:100%;
-        order:1;
         padding:20px;
     }
     .sidebar-center{
         border-radius: unset;
         flex-basis:100%;
-        order:2;
         padding:20px;
     }
     .sidebar-right{
         border-radius: unset;
         flex-basis:100%;
-        order:3;
         padding:20px;
     }
 

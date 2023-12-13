@@ -12,7 +12,7 @@ require_once 'views/parts/header.php';
         <h2>ACTUALITÉS</h2>
 
         <?php
-        $url = "https://www.01net.com/actualites/feed/";
+        $url = "https://www.01net.com/actualites/feed";
         $rss = simplexml_load_file($url);
 
         for ($i = 0; $i < 12; $i++) {
@@ -24,7 +24,6 @@ require_once 'views/parts/header.php';
         ?>
             <ul>
                 <li>
-                <img src="<?php echo $img ?>">
                     <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
                     <p><?php echo $desc ?></p>
                     <p><?php echo $date ?></p>
@@ -36,6 +35,7 @@ require_once 'views/parts/header.php';
 
     </div>
     <div class="sidebar-center">
+        <h2>JEUX VIDÉOS</h2>
         <?php
         $url = "https://www.jeuxactu.com/rss/mobile.rss";
         $rss = simplexml_load_file($url);
@@ -49,8 +49,8 @@ require_once 'views/parts/header.php';
         ?>
             <ul>
                 <li>
-                <img src="<?php echo $img ?>"><br>
                     <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
+                    <img src="<?php echo $img ?>">
                     <p><?php echo $desc ?></p>
                     <p><?php echo $date ?></p>
                 </li>
@@ -61,6 +61,7 @@ require_once 'views/parts/header.php';
 
     </div>
     <div class="sidebar-right">
+        <h2>FINANCES</h2>
         <?php
         $url = "https://www.lemonde.fr/economie/rss_full.xml";
         $rss = simplexml_load_file($url);
@@ -74,8 +75,8 @@ require_once 'views/parts/header.php';
         ?>
             <ul>
                 <li>
-                    <img src="<?php echo $img ?>">
                     <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
+                    <img src="<?php echo $img ?>">
                     <p><?php echo $desc ?></p>
                     <p><?php echo $date ?></p>
                 </li>
