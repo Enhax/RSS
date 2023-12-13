@@ -16,7 +16,7 @@
 <body>
     <nav>
         <div class="nav-left">
-            <a href="#" id="logo">RSS News</a>
+            <a href="http://rss/" id="logo">RSS News</a>
         </div>
         <div class="nav-center">
             <i class="fa-solid fa-xmark" id="closeBtn"></i>
