@@ -18,9 +18,9 @@
         <div class="nav-center">
         <ul>
             <li><a href="http://rss/">Accueil</a></li>
-            <li><a href="#">Flux rss 1</a></li>
-            <li><a href="#">Flux rss 2</a></li>
-            <li><a href="#">Flux rss 3</a></li>
+            <li><a href="#">Actualités</a></li>
+            <li><a href="#">Jeux vidéos</a></li>
+            <li><a href="#">Sports</a></li>
             <li><a href="http://rss/preferences">Préférences</a></li>
         </ul>
         </div>

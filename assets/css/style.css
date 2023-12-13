@@ -4,8 +4,8 @@
     box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 body{
-    background-color: #333;
     color:#efefef;
 }
 
@@ -20,7 +20,7 @@ nav{
     width:100%;
     padding:0 4%;
     background-color: #333;
-    border-bottom: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 10px 10px 10px #fff;
 }
 #logo{
     font-size: 45px;
@@ -54,7 +54,7 @@ nav ul li a{
 }
 
 .container{
-    padding:30px 8%;
+    padding:60px 8%;
     background-color: #333;
     min-height:85vh;
     display:flex;
@@ -62,21 +62,24 @@ nav ul li a{
 }
 
 .sidebar-left{
-    flex-basis:32%;
-    background-color: #efefef;
+    flex-basis:30%;
+    background-color: #333;
     border-radius: 6px;
+    overflow:auto;
 }
 
 .sidebar-center{
-    flex-basis:32%;
-    background-color: #efefef;
+    flex-basis:30%;
+    background-color: #333;
     border-radius: 6px;
+    overflow:auto;
 }
 
 .sidebar-right{
-    flex-basis:32%;
-    background-color: #efefef;
+    flex-basis:30%;
+    background-color: #333;
     border-radius: 6px;
+    overflow:auto;
 }
 
 .footer{
@@ -90,7 +93,45 @@ nav ul li a{
 .footer p{
     padding:10px 0;
 }
+.sidebar-left p{
+    color:#efefef;
 
-.channel .image{
-    width:50px;
+}
+
+.sidebar-left a, .sidebar-center a, .sidebar-right a{
+    text-decoration: none;
+    color: #1876f2;
+}
+.sidebar-left h4, .sidebar-center h4, .sidebar-right h4{
+    font-size:24px;
+    font-weight: 600;
+    padding-bottom:20px;
+    color: #efefef;
+}
+
+.sidebar-left p img{
+    width:100%;
+    height:300px;
+    padding: 10px 0;
+    margin:10px 0;
+}
+.sidebar-center p{
+    color:#efefef;
+    padding:10px 0;
+}
+.sidebar-center p img{
+    width:100%;
+    height:300px;
+    padding: 10px 0;
+    margin:10px 0;
+}
+.sidebar-right p{
+    color:#efefef;
+    padding:10px 0;
+}
+.sidebar-right p img{
+    width:100%;
+    height:300px;
+    padding: 10px 0;
+    margin:10px 0;
 }
