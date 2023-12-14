@@ -13,11 +13,11 @@
 
     <div>
     <form action="/preferences" method="GET">
-            <div><input type="checkbox" name="select[]" value="actu"><label>Actualités</label></div>
-            <div><input type="checkbox" name="select[]" value="jeux"><label>Jeux videos</label></div>
-            <div><input type="checkbox" name="select[]" value="eco"><label>Economies</label></div>
-            <div><input type="checkbox" name="select[]" value="sports"><label>Sports</label></div>
-            <div><input type="checkbox" name="select[]" value="techno"><label>Technologies</label></div>
+            <div><input type="checkbox" name="actu" value="Actualités"><label>Actualités</label></div>
+            <div><input type="checkbox" name="gaming" value="Jeux videos"><label>Jeux videos</label></div>
+            <div><input type="checkbox" name="eco" value="Economies"><label>Economies</label></div>
+            <div><input type="checkbox" name="sports" value="Sports"><label>Sports</label></div>
+            <div><input type="checkbox" name="tech" value="Technologies"><label>Technologies</label></div>
             <div><button type="submit" name="catPref">Sélectionner</button></div>
         </form>
     </div>
