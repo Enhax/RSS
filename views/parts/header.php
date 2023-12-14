@@ -22,6 +22,10 @@
             <i class="fa-solid fa-xmark" id="closeBtn"></i>
             <ul>
                 <li><a href="http://rss/">Accueil</a></li>
+                <?php
+                if(isset($_GET['select[]'])){ ?>
+                    <li><a href="#"><?= $_GET['select[]'] ?></a></li>
+           <?php } ?>
                 <li><a href="#">Actualités</a></li>
                 <li><a href="#">Jeux vidéos</a></li>
                 <li><a href="#">Sports</a></li>

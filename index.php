@@ -1,7 +1,10 @@
 <?php
+session_start();
 $page = 'Accueil';
+
 require_once 'controllers/indexController.php';
 require_once 'views/parts/header.php';
+
 ?>
 
 <h1>Le meilleur site de RSS au monde</h1>
@@ -10,12 +13,13 @@ require_once 'views/parts/header.php';
     <!-- CATEGORIE ACTU -->
     <div class="sidebar-left">
         <h2>ACTUALITÉS</h2>
-
-        <?php
+        
+        <?php      
         $url = "https://www.01net.com/actualites/feed";
         $rss = simplexml_load_file($url);
 
-        for ($i = 0; $i < 12; $i++) {
+        for ($i = 0; $i < $_SESSION['pref']; $i++) {
+
             $item = $rss->channel->item[$i];
             $datetime = date_create($item->pubDate);
             $date = date_format($datetime, 'd M Y, H\hi');
@@ -42,7 +46,7 @@ require_once 'views/parts/header.php';
         $url = "https://www.jeuxactu.com/rss/mobile.rss";
         $rss = simplexml_load_file($url);
 
-        for ($i = 0; $i < 12; $i++) {
+        for ($i = 0; $i < $_SESSION['pref']; $i++) {
             $item = $rss->channel->item[$i];
             $datetime = date_create($item->pubDate);
             $date = date_format($datetime, 'd M Y, H\hi');
@@ -70,7 +74,7 @@ require_once 'views/parts/header.php';
         $url = "https://www.lemonde.fr/economie/rss_full.xml";
         $rss = simplexml_load_file($url);
 
-        for ($i = 0; $i < 12; $i++) {
+        for ($i = 0; $i < $_SESSION['pref']; $i++) {
             $item = $rss->channel->item[$i];
             $datetime = date_create($item->pubDate);
             $date = date_format($datetime, 'd M Y, H\hi');
