@@ -13,7 +13,6 @@ function displayActu(){
         $rss = simplexml_load_file($url);
     
         for ($i = 0; $i < $_SESSION['pref']; $i++) {
-
             $item = $rss->channel->item[$i];
             $datetime = date_create($item->pubDate);
             $date = date_format($datetime, 'd M Y, H\hi');
@@ -40,7 +39,6 @@ function displayGaming(){
         $rss = simplexml_load_file($url);
 
         for ($i = 0; $i < $_SESSION['pref']; $i++) {
-
             $item = $rss->channel->item[$i];
             $datetime = date_create($item->pubDate);
             $date = date_format($datetime, 'd M Y, H\hi');
@@ -63,12 +61,10 @@ function displayGaming(){
     
 <?php
 function displayEco(){
-
-        $url = "https://www.lemonde.fr/economie/rss_full.xml";
+        $url = "https://www.lemonde.fr/videos/rss_full.xml";
         $rss = simplexml_load_file($url);
 
         for ($i = 0; $i < $_SESSION['pref']; $i++) {
-
             $item = $rss->channel->item[$i];
             $datetime = date_create($item->pubDate);
             $date = date_format($datetime, 'd M Y, H\hi');
@@ -79,7 +75,7 @@ function displayEco(){
                 <ul>
                     <li>
                         <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
-                        <!-- <img src="<?php echo $img ?>"> -->
+                        <!-- <img src="<?php echo $img ?>"> -->                      
                         <p><?php echo $desc ?></p>
                         <p><?php echo $date ?></p>
                     </li>
@@ -91,12 +87,10 @@ function displayEco(){
 
 <?php
 function displayPol(){
-
         $url = "https://www.lemonde.fr/politique/rss_full.xml";
         $rss = simplexml_load_file($url);
 
         for ($i = 0; $i < $_SESSION['pref']; $i++) {
-
             $item = $rss->channel->item[$i];
             $datetime = date_create($item->pubDate);
             $date = date_format($datetime, 'd M Y, H\hi');
@@ -123,7 +117,6 @@ function displaySci(){
         $rss = simplexml_load_file($url);
 
         for ($i = 0; $i < $_SESSION['pref']; $i++) {
-
             $item = $rss->channel->item[$i];
             $datetime = date_create($item->pubDate);
             $date = date_format($datetime, 'd M Y, H\hi');

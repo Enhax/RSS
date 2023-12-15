@@ -11,7 +11,7 @@ closeBtn.addEventListener('click', ()=>{
 })
 
 window.addEventListener('click', (e)=>{
-    if(e.target != sideMenu && e.target != openBtn){
+    if(e.target != sideMenu && e.target != openBtn && e.target != document.querySelector('ul')){
         sideMenu.style.right = '-200px';
     }
 });

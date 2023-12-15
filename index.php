@@ -13,8 +13,7 @@ require_once 'views/parts/header.php';
     <div class="sidebar-left">
         <h2>ACTUALITÉS</h2>
         <?php
-        echo displayActu();
-        /* if (isset($_SESSION['feeds']) == 'actu') {
+        if (isset($_SESSION['feeds']) == 'actu') {
             echo displayActu();
         } else if (isset($_SESSION['feeds']) == 'gaming') {
             echo displayGaming();
@@ -24,7 +23,9 @@ require_once 'views/parts/header.php';
             echo displayPol();
         } else if (isset($_SESSION['feeds']) == 'sci') {
             echo displaySci();
-        } */
+        } else{
+            echo displayGaming();
+        }
         ?>
 
     </div>
