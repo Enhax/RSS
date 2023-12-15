@@ -1,4 +1,5 @@
 <?php
+$page = 'Préférences';
 session_start();
 $_SESSION['pref'] = @$_GET['choice'];
 isset($_GET['choice']) ? $_GET['choice'] : $_SESSION['pref'] = 6;

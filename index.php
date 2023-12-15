@@ -13,87 +13,20 @@ require_once 'views/parts/header.php';
     <!-- CATEGORIE ACTU -->
     <div class="sidebar-left">
         <h2>ACTUALITÉS</h2>
-        
-        <?php      
-        $url = "https://www.01net.com/actualites/feed";
-        $rss = simplexml_load_file($url);
-
-        for ($i = 0; $i < $_SESSION['pref']; $i++) {
-
-            $item = $rss->channel->item[$i];
-            $datetime = date_create($item->pubDate);
-            $date = date_format($datetime, 'd M Y, H\hi');
-            $desc = $item->description;
-            $img = $item->enclosure['url'];
-        ?>
-            <div class="card">
-                <ul>
-                    <li>
-                        <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
-                        <p><?php echo $desc ?></p>
-                        <p><?php echo $date ?></p>
-                    </li>
-                </ul>
-            </div>
         <?php
-        }
-        ?>
+         if(isset($_GET['feed[]']) && $_GET['feed[]'] == 'sci') {
+            echo displaySci();
+        }; ?>
 
     </div>
     <div class="sidebar-center">
         <h2>JEUX VIDÉOS</h2>
-        <?php
-        $url = "https://www.jeuxactu.com/rss/mobile.rss";
-        $rss = simplexml_load_file($url);
-
-        for ($i = 0; $i < $_SESSION['pref']; $i++) {
-            $item = $rss->channel->item[$i];
-            $datetime = date_create($item->pubDate);
-            $date = date_format($datetime, 'd M Y, H\hi');
-            $desc = $item->description;
-            $img = $item->enclosure['url'];
-        ?>
-            <div class="card">
-                <ul>
-                    <li>
-                        <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
-                        <img src="<?php echo $img ?>">
-                        <p><?php echo $desc ?></p>
-                        <p><?php echo $date ?></p>
-                    </li>
-                </ul>
-            </div>
-        <?php
-        }
-        ?>
+        <?= displayGaming(); ?>
 
     </div>
     <div class="sidebar-right">
         <h2>FINANCES</h2>
-        <?php
-        $url = "https://www.lemonde.fr/economie/rss_full.xml";
-        $rss = simplexml_load_file($url);
-
-        for ($i = 0; $i < $_SESSION['pref']; $i++) {
-            $item = $rss->channel->item[$i];
-            $datetime = date_create($item->pubDate);
-            $date = date_format($datetime, 'd M Y, H\hi');
-            $desc = $item->description;
-            $img = $item->enclosure['url'];
-        ?>
-            <div class="card">
-                <ul>
-                    <li>
-                        <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
-                        <img src="<?php echo $img ?>">
-                        <p><?php echo $desc ?></p>
-                        <p><?php echo $date ?></p>
-                    </li>
-                </ul>
-            </div>
-        <?php
-        }
-        ?>
+        <?= displayEco() ?>
 
     </div>
 </div>
