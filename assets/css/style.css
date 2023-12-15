@@ -147,7 +147,7 @@ nav ul li a{
     color: #efefef;
 }
 
-.sidebar-left p img{
+.sidebar-left p img, .sidebar-center p img, .sidebar-right p img{
     height:300px;
     width:100%;
     margin:10px 0;

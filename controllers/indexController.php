@@ -34,6 +34,7 @@ function displayActu(){
     } ?>
 
 <?php
+
 function displayGaming(){
         $url = "https://www.jeuxactu.com/rss/mobile.rss";
         $rss = simplexml_load_file($url);
@@ -78,7 +79,7 @@ function displayEco(){
                 <ul>
                     <li>
                         <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
-                        <img src="<?php echo $img ?>">
+                        <!-- <img src="<?php echo $img ?>"> -->
                         <p><?php echo $desc ?></p>
                         <p><?php echo $date ?></p>
                     </li>
@@ -106,7 +107,6 @@ function displayPol(){
                 <ul>
                     <li>
                         <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
-                        <img src="<?php echo $img ?>">
                         <p><?php echo $desc ?></p>
                         <p><?php echo $date ?></p>
                     </li>
@@ -133,8 +133,7 @@ function displaySci(){
             <div class="card">
                 <ul>
                     <li>
-                        <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
-                        <img src="<?php echo $img ?>">
+                        <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a> 
                         <p><?php echo $desc ?></p>
                         <p><?php echo $date ?></p>
                     </li>
